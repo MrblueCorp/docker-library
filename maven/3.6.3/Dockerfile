@@ -5,7 +5,7 @@ MAINTAINER secr3t <secr3t@mrblue.com>
 ENV MVN_VERSION 3.6.3
 ENV MVN_DIR apache-maven-${MVN_VERSION}
 ENV MVN_TAR ${MVN_DIR}.tar.gz
-ENV MVN_DOWNLOAD_URL http://apache.tt.co.kr/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+ENV MVN_DOWNLOAD_URL http://apache.tt.co.kr/maven/maven-3/${MVN_VERSION}/binaries/apache-maven-${MVN_VERSION}-bin.tar.gz
 ENV MVN_HOME /usr/local/maven
 
 RUN cd /usr/local/src && \
