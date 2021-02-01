@@ -2,6 +2,7 @@ FROM mrbluecorp/openjdk:11.0.5-jdk
 
 # ImageMagick 설치
 ARG CACHEBUST=0
+RUN yum upgrade -y
 RUN yum install -y gcc php-devel php-pear && \
     yum install -y ImageMagick ImageMagick-devel
 ARG CACHEBUST=1
